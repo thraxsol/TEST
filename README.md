@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/serpent-advanced-v3.svg" width="900" alt="thrax • Serpent - Advanced v2.svg">
+  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/serpent-advanced-v3.svg" width="900" alt="thrax • Serpent - Advanced v3.svg">
 </p>
 
 <p align="center">
