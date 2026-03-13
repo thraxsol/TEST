@@ -1,7 +1,7 @@
 # thrax • README
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/snake.svg" width="720" alt="Animated snake trail (thrax • serpent)">
+  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/snake.svg" width="900" alt="Animated snake trail (thrax • serpent)">
 </p>
 
 <p align="center">
