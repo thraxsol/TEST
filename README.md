@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/laugh-emoji.svg" width="480" alt="thrax • Laughing Emoji.svg">
+  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/Serpent2.svg" width="480" alt="thrax • Serpent - Advanced v2.svg">
 </p>
 
 <p align="center">
