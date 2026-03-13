@@ -89,7 +89,7 @@
     <g transform="translate(0, -170)">
       <rect x="-160" y="-18" width="320" height="44" rx="10" fill="#ffffff" opacity="0.06" stroke="#ffffff" stroke-opacity="0.08"/>
       <text x="0" y="12" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#E6F7FF" text-anchor="middle" dominant-baseline="middle" opacity="0.95">
-        <tspan id="caption">when CI passes on first try</tspan>
+        <tspan id="caption">$LMAO</tspan>
         <animate attributeName="opacity" values="0.95;0.6;0.95" dur="3.6s" repeatCount="indefinite"/>
       </text>
       <!-- small pulse dot -->
