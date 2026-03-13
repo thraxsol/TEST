@@ -69,21 +69,21 @@
     </g>
 
     <!-- animated tears (left and right) -->
-#    <g id="tears" transform="translate(0,-10)">
-#      <!-- left tear -->
-#      <path d="M -48,10 C -44,18 -40,26 -36,36 C -34,42 -30,48 -26,54" fill="none" stroke="url(#tearGrad)" stroke-width="8" stroke-linecap="round" opacity="0.95">
-#        <animate attributeName="stroke-width" values="8;2;8" dur="1.8s" repeatCount="indefinite"/>
-#        <animateTransform attributeName="transform" type="translate" values="0,0;0,8;0,16" dur="2.4s" repeatCount="indefinite"/>
-#        <animate attributeName="opacity" values="0.95;0.25;0.95" dur="2.4s" repeatCount="indefinite"/>
-#      </path>
-#
-#      <!-- right tear -->
-#      <path d="M 48,10 C 44,18 40,26 36,36 C 34,42 30,48 26,54" fill="none" stroke="url(#tearGrad)" stroke-width="8" stroke-linecap="round" opacity="0.95">
-#        <animate attributeName="stroke-width" values="8;2;8" dur="1.8s" repeatCount="indefinite" begin="0.12s"/>
-#        <animateTransform attributeName="transform" type="translate" values="0,0;0,8;0,16" dur="2.4s" repeatCount="indefinite" begin="0.12s"/>
-#        <animate attributeName="opacity" values="0.95;0.25;0.95" dur="2.4s" repeatCount="indefinite" begin="0.12s"/>
-#      </path>
-#    </g>
+    <g id="tears" transform="translate(0,-10)">
+      <!-- left tear -->
+      <path d="M -48,10 C -44,18 -40,26 -36,36 C -34,42 -30,48 -26,54" fill="none" stroke="url(#tearGrad)" stroke-width="8" stroke-linecap="round" opacity="0.95">
+        <animate attributeName="stroke-width" values="8;2;8" dur="1.8s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,8;0,16" dur="2.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.95;0.25;0.95" dur="2.4s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- right tear -->
+      <path d="M 48,10 C 44,18 40,26 36,36 C 34,42 30,48 26,54" fill="none" stroke="url(#tearGrad)" stroke-width="8" stroke-linecap="round" opacity="0.95">
+        <animate attributeName="stroke-width" values="8;2;8" dur="1.8s" repeatCount="indefinite" begin="0.12s"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,8;0,16" dur="2.4s" repeatCount="indefinite" begin="0.12s"/>
+        <animate attributeName="opacity" values="0.95;0.25;0.95" dur="2.4s" repeatCount="indefinite" begin="0.12s"/>
+      </path>
+    </g>
 
     <!-- caption bubble -->
     <g transform="translate(0, -170)">
