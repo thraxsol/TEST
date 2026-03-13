@@ -1,15 +1,15 @@
 # thrax • README
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/snake.svg" width="900" alt="Animated snake trail (thrax • serpent)">
+  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/snake.svg" width="900" alt="Animated snake trail (thrax • Serpent)">
 </p>
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/serpent-advanced.svg" width="900" alt="thrax • serpent — advanced">
+  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/serpent-advanced.svg" width="900" alt="thrax • Serpent — Advanced">
 </p>
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/walker-advanced.svg" width="720" alt="thrax • walker — animated">
+  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/laugh-emoji.svg" width="720" alt="thrax • Laughing Emoji.svg">
 </p>
 
 <p align="center">
