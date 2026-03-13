@@ -1,6 +1,5 @@
 <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <circle r="6" fill="#FF5252">
-    <animateMotion dur="6s" repeatCount="indefinite"
-      path="M20,20 L180,20 L180,180 L20,180 Z" />
+  <circle cx="100" cy="100" r="40" fill="#7E57C2">
+    <animate attributeName="r" values="40;55;40" dur="3s" repeatCount="indefinite"/>
   </circle>
 </svg>
