@@ -9,6 +9,10 @@
 </p>
 
 <p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/walker-advanced.svg" width="720" alt="thrax • walker — animated">
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/ANIMATION-SVG-111827?style=for-the-badge&logo=svg&logoColor=white" />
   <img src="https://img.shields.io/badge/STYLE-gradient-111827?style=for-the-badge" />
 </p>
