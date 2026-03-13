@@ -28,3 +28,8 @@ A lightweight, animated SVG that runs directly in the README via the raw GitHub 
 <p align="center">
   <img src="https://raw.githubusercontent.com/thraxsol/TEST/refs/heads/main/assets/snake.svg" width="720" alt="Animated snake trail (thrax • serpent)">
 </p>
+```
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/thraxsol/TEST@main/assets/serpent-advanced.svg" width="900" alt="thrax • serpent — advanced">
+</p>
