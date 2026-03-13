@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- gradient for the snake -->
+    <linearGradient id="grad" x1="0" x2="1">
+      <stop offset="0" stop-color="#00F5A0"/>
+      <stop offset="0.45" stop-color="#06B6D4"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <!-- subtle background radial -->
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#071029" stop-opacity="1"/>
+      <stop offset="1" stop-color="#02040a" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- path the snake follows -->
+    <path id="route" d="M40,110 C140,20 260,200 380,110 C480,40 600,200 740,110 C820,60 860,140 900,110" fill="none" stroke="none"/>
+
+    <!-- glow filter -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- particle circle used as symbol -->
+    <circle id="p" r="2" fill="#9CA3AF" opacity="0.12"/>
+
+    <!-- mask to reveal a moving dashed stroke as a "ribbon" -->
+    <mask id="ribbonMask">
+      <rect x="0" y="0" width="100%" height="100%" fill="black"/>
+      <path d="M40,110 C140,20 260,200 380,110 C480,40 600,200 740,110 C820,60 860,140 900,110"
+            stroke="white" stroke-width="18" stroke-linecap="round" fill="none"
+            stroke-dasharray="0 1200">
+        <animate attributeName="stroke-dasharray" values="0 1200;1200 0;0 1200" dur="8s" repeatCount="indefinite"/>
+      </path>
+    </mask>
+  </defs>
+
+  <!-- background -->
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+
+  <!-- moving particle field (randomized positions via staggered motion) -->
+  <g transform="translate(0,-10)" opacity="0.9">
+    <!-- generate a few particles with different speeds and delays -->
+    <use href="#p" x="60" y="30">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M0,0 L840,0" />
+    </use>
+    <use href="#p" x="120" y="180">
+      <animateMotion dur="18s" repeatCount="indefinite" path="M0,0 L840,0" />
+    </use>
+    <use href="#p" x="300" y="50">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M0,0 L840,0" />
+    </use>
+    <use href="#p" x="420" y="170">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M0,0 L840,0" />
+    </use>
+    <use href="#p" x="700" y="40">
+      <animateMotion dur="16s" repeatCount="indefinite" path="M0,0 L840,0" />
+    </use>
+  </g>
+
+  <!-- faint guide path for depth -->
+  <path d="M40,110 C140,20 260,200 380,110 C480,40 600,200 740,110 C820,60 860,140 900,110"
+        stroke="#0b1220" stroke-width="4" stroke-linecap="round" opacity="0.12" fill="none"/>
+
+  <!-- ribbon reveal (masked gradient band) -->
+  <g mask="url(#ribbonMask)" opacity="0.95">
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#grad)" opacity="0.18"/>
+  </g>
+
+  <!-- dashed moving stroke for motion texture -->
+  <path d="M40,110 C140,20 260,200 380,110 C480,40 600,200 740,110 C820,60 860,140 900,110"
+        stroke="url(#grad)" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 8" fill="none" opacity="0.9">
+    <animate attributeName="stroke-dashoffset" from="0" to="-240" dur="3.6s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- snake segments: head + trailing segments with staggered motion and glow -->
+  <g filter="url(#softGlow)">
+    <!-- head (larger, bright) -->
+    <circle r="10" fill="#ffffff">
+      <animateMotion dur="3.6s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#route"/>
+      </animateMotion>
+    </circle>
+
+    <!-- colored body segments, staggered begins create the trailing effect -->
+    <circle r="9" fill="url(#grad)" opacity="0.95">
+      <animateMotion dur="3.6s" begin="-0.18s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#route"/>
+      </animateMotion>
+    </circle>
+
+    <circle r="8" fill="#06B6D4" opacity="0.9">
+      <animateMotion dur="3.6s" begin="-0.36s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#route"/>
+      </animateMotion>
+    </circle>
+
+    <circle r="7" fill="#7C3AED" opacity="0.85">
+      <animateMotion dur="3.6s" begin="-0.54s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#route"/>
+      </animateMotion>
+    </circle>
+
+    <circle r="6" fill="#00F5A0" opacity="0.75">
+      <animateMotion dur="3.6s" begin="-0.72s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#route"/>
+      </animateMotion>
+    </circle>
+
+    <circle r="5" fill="#ffffff" opacity="0.6">
+      <animateMotion dur="3.6s" begin="-0.90s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#route"/>
+      </animateMotion>
+    </circle>
+  </g>
+
+  <!-- subtle label -->
+  <text x="18" y="200" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#9CA3AF">thrax • serpent — advanced</text>
+</svg>
