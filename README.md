@@ -17,13 +17,13 @@
   <img src="https://img.shields.io/badge/STYLE-gradient-111827?style=for-the-badge" />
 </p>
 
-A lightweight, animated SVG that runs directly in the README via the raw GitHub URL. The image above is served from the repository at `assets/snake.svg` and animates using SMIL/CSS when GitHub loads the raw SVG.
+A few lightweight, animated SVGs that run directly in the README via the raw GitHub URL. The image above is served from the repository at `assets/snake.svg` and animates using SMIL/CSS when GitHub loads the raw SVG.
 
 ---
 
 ### How it works
 
-- The README references the **raw** SVG URL so GitHub serves the file directly and preserves the animation.
+- The README references the **raw** SVG URL, so GitHub serves the file directly and preserves the animation.
 - The SVG file must be **committed** to the branch you reference (here: `main` → `assets/snake.svg`).
 - Use the `<img>` tag with the raw URL to control display size (`width` or `height`).
 
