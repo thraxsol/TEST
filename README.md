@@ -1,8 +1,14 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="100" cy="100" r="4" fill="#4FC3F7">
-    <animateMotion dur="4s" repeatCount="indefinite"
-      path="M 100,50 A 50,50 0 1 1 99.9,50" />
-  </circle>
+const cols = process.stdout.columns;
+const rows = process.stdout.rows;
+const drops = Array(cols).fill(0);
 
-  <circle cx="100" cy="100" r="50" fill="none" stroke="#4FC3F7" stroke-width="1.5" opacity="0.4"/>
-</svg>
+setInterval(() => {
+  let output = "";
+  for (let i = 0; i < cols; i++) {
+    const char = String.fromCharCode(0x30A0 + Math.random() * 96);
+    output += drops[i] > rows ? " " : char;
+    drops[i] = drops[i] > rows ? 0 : drops[i] + 1;
+  }
+  console.clear();
+  console.log(output);
+}, 50);
